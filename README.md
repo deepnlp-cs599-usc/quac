@@ -1,11 +1,11 @@
 # Question Answering In Context
 
-# QuAC
+## QuAC
 
-# Approaches
+## Approaches
 
-## FlowQA
+### FlowQA
 
-## SD-Net
+### SD-Net
 
-## Bert
+### BiDAF++
