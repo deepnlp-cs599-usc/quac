@@ -11,7 +11,7 @@
 ## Dataset
 ## Learning curve on training and validation datasets
 <p align="center">
-    <img src="photo.png" width="2500"/>
+    <img src="photo.png" width="150%"/>
 
 
 
