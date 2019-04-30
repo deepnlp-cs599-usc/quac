@@ -7,5 +7,7 @@ hello world
 </p>
 
 ## architecture of enhenced BiDAF++
-![Screenshot](Arch.png)
+<p align="center">
+    <img src="Arch.png" width="1000"/>
+</p>
 
