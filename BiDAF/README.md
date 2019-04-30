@@ -1,4 +1,4 @@
-# Using enhenced BiDAF++ on QUAC
+# Using enhenced BiDAF++ on QAC
 
 ## Descriptions
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings.
