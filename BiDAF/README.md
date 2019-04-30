@@ -5,7 +5,7 @@ An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for wo
 
 ## Architecture of enhenced BiDAF++
 <p align="center">
-    <img src="Arch.png" width="600"/>
+    <img src="Arch.png" width="90%"/>
 </p>
 
 ### Embedding layers from BiDAF++
