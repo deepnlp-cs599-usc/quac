@@ -23,3 +23,7 @@ In order to feed this coreference information to the FlowQA model, we can
 
 * Feed the result from the coreference model to the FlowQA model
 * Feed the internal representation of each tokens in coreference model to the FlowQA model
+
+## Feed the result from the coreference model to the FlowQA model
+
+## Feed the internal representation of each tokens in coreference model to the FlowQA model
