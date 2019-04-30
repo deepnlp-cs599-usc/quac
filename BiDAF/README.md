@@ -68,10 +68,12 @@ additionally summed with the input before ReLU.
 [Train data](https://s3.amazonaws.com/my89public/quac/train_5000.json)  
 [Validation data](https://s3.amazonaws.com/my89public/quac/val.json)
 
-### Command
+### Training
+Train a enhenced model with the QuAC dataset which includes training and validation dataset
 ```
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
+Since in the QuAC(此处可有paper链接)，Questions in the training set have one reference answer, while validation and test questions have five references each, which makes the F1 score on validation dataset has a higher score then that on training set. 
 ## Results
 ### F1 score
 Enhenced model with BERT
