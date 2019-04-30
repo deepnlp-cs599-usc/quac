@@ -95,7 +95,7 @@ Baseline model
     <img src="Figures/baseline.png" width="200%"/>
 </p>
 
-### Performance on basline and enhenced models
+### Performance on baseline and enhenced models
 
 | | F1 score on training set | F1 score on validation set|
 | --- | --- | --- |
