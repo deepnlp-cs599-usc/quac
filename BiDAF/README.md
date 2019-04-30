@@ -4,11 +4,13 @@
 ## Architecture of enhenced BiDAF++
 <p align="center">
     <img src="Arch.png" width="600"/>
-</p>
+
 ## Prerequisites
+## Usage
+## Dataset
 ## Learning curve on training and validation datasets
 <p align="center">
     <img src="photo.png" width="2500"/>
-</p>
+
 
 
