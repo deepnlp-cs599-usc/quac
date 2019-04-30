@@ -5,7 +5,7 @@ An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for wo
 
 ## Architecture of enhenced BiDAF++
 <p align="center">
-    <img src="Arch.png" width="90%"/>
+    <img src="Figures/Arch.png" width="90%"/>
 </p>
 
 ### Embedding layers from BiDAF++
@@ -25,17 +25,17 @@ First, the input is passed through a linear layer with ReLU activations. Then, i
 
 Let h<sub>i</sub>, h<sub>j</sub> be the vectors for context word i and word j and nc be the lengths of the context. Then compute attention between the two words as:
 <p align="center">
-    <img src="1.png" width="400"/>
+    <img src="Figures/1.png" width="400"/>
 </p>
 
 where w<sub>1</sub>,w<sub>2</sub>, and w<sub>3</sub> are learned vectors and ⊙ is element-wise multiplica- tion. In this case, we set a<sub>ij</sub> = −inf if i = j. Then, compute an attended vector c<sub>i</sub> for each context token as:
 <p align="center">
-    <img src="2.png" width="350"/>
+    <img src="Figures/2.png" width="350"/>
 </p>
 
 Compute a context-to-context vector t<sub>c</sub>:
 <p align="center">
-    <img src="3.png" width="450"/>
+    <img src="Figures/3.png" width="450"/>
 </p>
 
 The output of this layer is built concatenating h<sub>i</sub>, c<sub>i</sub>, h<sub>i</sub> ⊙ c<sub>i</sub> and t<sub>c</sub> ⊙ c<sub>i</sub>,
@@ -80,15 +80,15 @@ Best model's configuration is [here](https://github.com/deepnlp-cs599-usc/quac/b
 ### F1 score
 Enhenced model by BERT
 <p align="center">
-    <img src="enhenced.png" width="200%"/>
+    <img src="Figures/enhenced.png" width="200%"/>
 </p>
 Enhenced model by ELMo 
 <p align="center">
-    <img src="enhenced_elmo.png" width="200%"/>
+    <img src="Figures/enhenced_elmo.png" width="200%"/>
 </p>
 Baseline model
 <p align="center">
-    <img src="baseline.png" width="200%"/>
+    <img src="Figures/baseline.png" width="200%"/>
 </p>
 
 ### Performance on basline and enhenced models
