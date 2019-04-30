@@ -69,7 +69,7 @@ additionally summed with the input before ReLU.
 [Validation data](https://s3.amazonaws.com/my89public/quac/val.json)
 
 ### Training
-Train a enhenced model with the QuAC dataset which includes training and validation dataset
+Train a enhenced model with QuAC dataset which includes training and validation dataset
 ```
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
