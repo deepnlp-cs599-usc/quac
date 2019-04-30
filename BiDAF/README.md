@@ -75,10 +75,10 @@ nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path
 ## Learning curve on enhenced model
 <p align="center">
     <img src="learning_curve.png" width="150%"/>
-</p>
+
 ## Learning curve on baseline model
 <p align="center">
     <img src="baseline.png" width="150%"/>
-</p>
+
 
 
