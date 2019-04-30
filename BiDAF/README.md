@@ -63,6 +63,15 @@ additionally summed with the input before ReLU.
 
 
 ## Usage
+
+### Dataset
+[Train data](https://s3.amazonaws.com/my89public/quac/train_5000.json)  
+[Validation data](https://s3.amazonaws.com/my89public/quac/val.json)
+
+### Command
+```
+nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
+```
 ## Learning curve on training and validation datasets
 <p align="center">
     <img src="learning_curve.png" width="150%"/>
