@@ -17,7 +17,7 @@ Let ELMo<sub>k</sub> be a ELMo vector, x<sub>k</sub> denote a original embedding
 We do the same thing when using BERT embedding.
 
 ELMo ver:[options_file](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json)
-      and [weight_file](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)
+      and [weight_file](https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5)  
 BERT ver: [bert-large-cased](https://s3.amazonaws.com/models.huggingface.co/bert/bert-large-cased-vocab.txt)
 ### Self-Attention layers from BiDAF++
 
