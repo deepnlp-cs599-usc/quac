@@ -6,4 +6,4 @@ hello world
 
 ## architecture of enhenced BiDAF++
 ![Screenshot](Arch.png)
-<img src="./Arch.png" width = "60%" height = "60%" alt="图片名称" align=center/>
+
