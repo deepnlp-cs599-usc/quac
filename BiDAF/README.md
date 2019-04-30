@@ -78,11 +78,11 @@ As [QuAC](https://arxiv.org/pdf/1808.07036.pdf) mentioned，Questions in the tra
 Best model's configuration is [here](https://github.com/deepnlp-cs599-usc/quac/blob/master/BiDAF/BiDAFF%2B%2B_with_glove%2Bbert.jsonnet).
 ## Results
 ### F1 score
-Enhenced model with BERT
+Enhenced model by BERT
 <p align="center">
     <img src="enhenced.png" width="200%"/>
 </p>
-Enhenced model with ELMo 
+Enhenced model by ELMo 
 <p align="center">
     <img src="enhenced_elmo.png" width="200%"/>
 </p>
