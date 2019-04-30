@@ -6,6 +6,10 @@
 
 ### FlowQA
 
+#### FlowQA + Attention
+
+#### FlowQA + Coreference
+
 ### SD-Net
 
 ### BiDAF++
