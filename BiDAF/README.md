@@ -72,13 +72,14 @@ additionally summed with the input before ReLU.
 ```
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
-## Learning curve on enhenced model
+## Learning curves
+Enhenced model
 <p align="center">
     <img src="enhenced.png" width="200%"/>
-
-## Learning curve on baseline model
+</p>
+Baseline model
 <p align="center">
     <img src="baseline.png" width="200%"/>
-
+</p>
 
 
