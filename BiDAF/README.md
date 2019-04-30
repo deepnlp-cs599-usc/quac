@@ -72,12 +72,13 @@ additionally summed with the input before ReLU.
 ```
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
-## Learning curves
+## Results
+### F1 score
 Enhenced model with BERT
 <p align="center">
     <img src="enhenced.png" width="200%"/>
 </p>
-Enhenced model with ELMo
+Enhenced model with ELMo 
 <p align="center">
     <img src="enhenced_elmo.png" width="200%"/>
 </p>
@@ -86,7 +87,7 @@ Baseline model
     <img src="baseline.png" width="200%"/>
 </p>
 
-Performance on basline and enhenced models
+### Performance on basline and enhenced models
 
 | | F1 score on training set | F1 score on validation set|
 | --- | --- | --- |
