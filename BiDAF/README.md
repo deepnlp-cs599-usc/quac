@@ -102,3 +102,9 @@ Baseline model
 | Bseline model | 49.40 | 55.59 |
 | Enhenced by ELMo | 49.40 | **58.40** |
 | Enhenced by BERT | **53.05** | **60.04**|
+
+## Related works
+
+* [Bidirectional attention ﬂow for machine comprehension](https://arxiv.org/abs/1611.01603) by Minjoon Seo, Aniruddha Kembhavi, Ali Farhadi, Hannaneh Hajishirzi.
+* [Simple and effective multi-paragraph reading comprehension](https://arxiv.org/abs/1710.10723) by Christopher Clark, Matt Gardner.
+* [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) by Matthew E. Peters  
