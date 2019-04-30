@@ -86,4 +86,11 @@ Baseline model
     <img src="baseline.png" width="200%"/>
 </p>
 
+Performance on basline and enhenced models
+
+| | F1 score on training set | F1 score on validation set|
+| --- | --- | --- |
+| Bseline model | 49.4 | 55.59 |
+| Enhenced by ELMo | 49.4 | **58.4** |
+| Enhenced by BERT | **53.05** | **60.04**|
 
