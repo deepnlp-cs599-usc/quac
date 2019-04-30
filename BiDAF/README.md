@@ -8,6 +8,6 @@ hello world
 
 ## architecture of enhenced BiDAF++
 <p align="center">
-    <img src="Arch.png" width="700"/>
+    <img src="Arch.png" width="600"/>
 </p>
 
