@@ -73,7 +73,7 @@ additionally summed with the input before ReLU.
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
 ## Learning curves
-Enhenced model with Bert embedding
+Enhenced model with Bert
 <p align="center">
     <img src="enhenced.png" width="200%"/>
 </p>
