@@ -75,7 +75,7 @@ nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path
 ```
 As [QuAC](https://arxiv.org/pdf/1808.07036.pdf) mentioned，Questions in the training set have one reference answer, while validation and test questions have five references each, which makes the F1 score on validation dataset has a higher score then that on training set.
 
-Best model configuration is [here](https://github.com/deepnlp-cs599-usc/quac/blob/master/BiDAF/BiDAFF%2B%2B_with_glove%2Bbert.jsonnet)
+Best model's configuration is [here](https://github.com/deepnlp-cs599-usc/quac/blob/master/BiDAF/BiDAFF%2B%2B_with_glove%2Bbert.jsonnet).
 ## Results
 ### F1 score
 Enhenced model with BERT
