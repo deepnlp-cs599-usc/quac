@@ -40,6 +40,10 @@ Compute a context-to-context vector t<sub>c</sub>:
 
 The output of this layer is built concatenating h<sub>i</sub>, c<sub>i</sub>, h<sub>i</sub> ⊙ c<sub>i</sub> and t<sub>c</sub> ⊙ c<sub>i</sub>,
 additionally summed with the input before ReLU.
+### Modification
+
+We modified the wordpiece indexer and bert token embedder to train the model with BERT embedding, cause origianl two files cannot handle the situation with 500 more tokens in the sentence. The modified files would not influence training process of model with other embeddings.
+
 ## Platform and tools
 ### Launching a Deep Learning VM on GCP
 - 2 vCPUs with 13GB memory
