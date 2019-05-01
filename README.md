@@ -57,6 +57,7 @@ A contextualized attention-based deep neural network developed by Microsoft. It 
 An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings. We intend to append ELMo or BERT embedding to word embeddings and contextualized embeddings to get better performance.
 
 ## Results
+<center>
 | Model | F1 | Remark |
 | ------------- | ------------- | ------------- |
 | **FlowQA Baseline** | 64.24| full dataset |
@@ -67,6 +68,7 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 | ELMO + BiDAF++ | 58.42 |  |
 | BERT + BIDAF++ | 59.34 |  |
 | **SDNet** | 33.13 |  |
+</center>
 
 ## Conclusion
 * **FlowQA+Attention Over Flow**: adding attention layers over ﬂow operation layer slightly improves the FlowQA model. We believe that it is because the representations generated in this way focus more on recent dialogs and help resolve coreferences.
