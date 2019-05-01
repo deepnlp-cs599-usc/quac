@@ -83,4 +83,8 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 ## References
 
 
+* [Bidirectional attention ﬂow for machine comprehension](https://arxiv.org/abs/1611.01603) by Minjoon Seo et. al.
+* [Simple and effective multi-paragraph reading comprehension](https://arxiv.org/abs/1710.10723) by Christopher Clark et. al.
+* [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) by Matthew E. Peters et. al.
+* [Bert: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805) by  Jacob Devlin et. al.
 
