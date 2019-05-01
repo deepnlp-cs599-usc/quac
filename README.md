@@ -9,7 +9,7 @@ This project is a part of CS 599 Deep Learning and Its Applications in Spring 20
 <p align="center">
     <img src="figure/task.png" width="400"/>
     <br></br>
-    Figure 1: Task setup of QuAC.
+    Figure 1: Task setup of QuAC. (Pics from [QuAC](https://quac.ai))
 </p>
 
 [Question Answering in Context(QuAC)](https://quac.ai/) is a newly proposed dataset with regards to conversational QA. The task is to answer a question in a conversation given a context and historical questions and answers in the conversation. Compared with the former ones, its questions are often highly context-dependent, elliptical, and even unanswerable. The architecture o typical QA models for QuAC:
