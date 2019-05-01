@@ -62,11 +62,11 @@ An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for wo
 | **FlowQA Baseline** | 64.20| full dataset |
 | **FlowQA Baseline** | 53.40| 25% dataset |
 | FlowQA + Coreference | 53.98 | 25% dataset |
-| FlowQA + Attention on Flows | 64.35 | Content Cell |
+| FlowQA + Attention on Flows | 64.35 |  |
 | **BiDAF++ Baseline** | 55.59 | full dataset |
-| ELMO + BiDAF++ | 58.42 | Content Cell |
-| BERT + BIDAF++ | 59.34 | Content Cell |
-| **SDNet** | 33.13 | Content Cell |
+| ELMO + BiDAF++ | 58.42 |  |
+| BERT + BIDAF++ | 59.34 |  |
+| **SDNet** | 33.13 |  |
 
 ## Conclusion
 * **FlowQA+Attention Over Flow**: adding attention layers over ﬂow operation layer slightly improves the FlowQA model. We believe that it is because the representations generated in this way focus more on recent dialogs and help resolve coreferences.
