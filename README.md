@@ -3,6 +3,8 @@ Question Answering (QA) has long been a promising yet challenging task, and a la
 
 In this project, we are going to use deep neural networks to address [QuAC](https://quac.ai/), one of these Conversational QA datasets. We are going to train existing models on QuAC and compare their pros and cons. We will also use models effective on other related datasets and invent new models involving different network architectures or mechanisms. We hope that we could obtain a better, and even state-of-the-art performance.
 
+This project is part of CS 599 Deep Learning and Its Applications, Spring 2019, Department of Computer Science, University of Southern California.
+
 ## QuAC
 <p align="center">
     <img src="figure/task.png" width="400"/>
