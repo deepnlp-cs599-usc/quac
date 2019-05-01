@@ -8,9 +8,6 @@ However, we have noticed that in the "flow" operation, no attention mechanism is
 
 ![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Attention%20Over%20Flow.png)
 
-## Technical detail
-
-We would describe how we modified the "flow" operation in detail.
 
 ## Experiments
 
@@ -49,7 +46,10 @@ To specify not using "attention over flow", run:
 
 ## Results
 
-The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value. We would like to mention that the model converges much faster, as only 10 epochs is used instead of 20.
+The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value on dev set. We would like to mention that the model converges much faster, as only 10 epochs is used instead of 20.
+
+![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/result.png)
+
 
 ## References
 
