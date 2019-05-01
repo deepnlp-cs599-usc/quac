@@ -30,7 +30,11 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 #### [FlowQA + Attention](FlowQA_Attention)
 
+##### TODO
+
 #### [FlowQA + Coreference](FlowQA_Coreference)
+
+Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is 
 
 ### [SD-Net](SDNet)
 A contextualized attention-based deep neural network developed by Microsoft. It is originally evaluated on another question answering dataset CoQA, and it is the first model that reaches in-domain F1 score higher than 80% (80.7%) on CoQA. Here we are applying this model on QuAC dataset. Since the format of two datasets are different, we need to preprocess data carefully.
