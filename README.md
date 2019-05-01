@@ -80,3 +80,7 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 
 * **SDNet**: SDnet is not originally applied on QuAC dataset. So we adjusted the format of dataset so it can be ﬁtted on SDNet. However the result is not as good as we expected. We can try to ﬁgure out issues and improve this model in future.
 
+## References
+
+
+
