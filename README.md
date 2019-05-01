@@ -26,7 +26,7 @@ In this project, we are going to use deep neural networks to address QuAC[1], on
 #### [FlowQA + Coreference](FlowQA_Coreference)
 
 ### [SD-Net](SDNet)
-A contextualized attention-based deep neural network developed by Microsoft. It is originally evaluated on another question answering dataset CoQA, and it is the first model that reaches in-domain F1 score higher than 80% (80.7%) on CoQA. Here we are applying this model on QuAC dataset. Since the format of two datasets are different, the main task here is preprocessing.
+A contextualized attention-based deep neural network developed by Microsoft. It is originally evaluated on another question answering dataset CoQA, and it is the first model that reaches in-domain F1 score higher than 80% (80.7%) on CoQA. Here we are applying this model on QuAC dataset. Since the format of two datasets are different, we need to preprocess data carefully.
 
 ### [BiDAF++](BiDAF)
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings. We intend to append ELMo or BERT embedding to word embeddings and contextualized embeddings to get better performance.
