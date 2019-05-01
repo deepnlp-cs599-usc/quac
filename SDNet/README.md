@@ -14,7 +14,11 @@ For detailed usage please refer to [SDNet GitHub page](https://github.com/Micros
 Training loss and development set F1 score are shown below: 
 
 <p align="center">
-    <img src="Figures/loss.jpg" height="50%" width="50%"/> <img src="Figures/f1.jpg" height="50%" width="50%"/>
+    <img src="Figures/loss.jpg" height="50%" width="50%"/>
+</p>
+
+<p align="center">
+    <img src="Figures/f1.jpg" height="50%" width="50%"/>
 </p>
 
 Unfortunately, the reult of SDNet is not as good as we expected. We only get 33.13 F1 score on development set. We tried to feagure out the reason why this happends (such as format and preprocess issue) but couldn't make any significant improvement on that. We can set this as a future work and continue working on this.
