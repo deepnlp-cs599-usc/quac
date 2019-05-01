@@ -3,8 +3,6 @@ Question Answering (QA) has long been a promising yet challenging task, and a la
 
 In this project, we are going to use deep neural networks to address [QuAC](https://quac.ai/), one of these Conversational QA datasets. We are going to train existing models on QuAC and compare their pros and cons. We will also use models effective on other related datasets and invent new models involving different network architectures or mechanisms. We hope that we could obtain a better, and even state-of-the-art performance.
 
-This project is part of CS 599 Deep Learning and Its Applications, Spring 2019, Department of Computer Science, University of Southern California.
-
 ## QuAC
 <p align="center">
     <img src="figure/task.png" width="400"/>
@@ -25,7 +23,7 @@ The input of the problem is a context as background and a sequence of text-free 
 
 The output is the answer of each question. The answer must be a span of context unless the question is a “yes/no“ question, or the answer should be “cannot answer“ if the answer cannot be found in given context.
 
-## Approaches and Results
+## Approaches
 ### FlowQA
 
 [FlowQA](https://github.com/momohuang/FlowQA) has been shown to have a considerable good performance on conversational question-answering tasks such as CoQA and QuAC. Firstly, we re-run the FlowQA model and investigate why it has great performance and why it is special. 
@@ -58,7 +56,17 @@ A contextualized attention-based deep neural network developed by Microsoft. It 
 ### [BiDAF++](BiDAF)
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings. We intend to append ELMo or BERT embedding to word embeddings and contextualized embeddings to get better performance.
 
-![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/BiDAF/Figures/Arch.png)
+## Results
+| Model | F1 | Remark |
+| ------------- | ------------- | ------------- |
+| **FlowQA Baseline** | 64.20| full dataset |
+| **FlowQA Baseline** | 53.40| 25% dataset |
+| FlowQA + Coreference | 53.98 | 25% dataset |
+| FlowQA + Attention on Flows | 64.35 | Content Cell |
+| **BiDAF++ Baseline** | 55.59 | full dataset |
+| ELMO + BiDAF++ | 58.42 | Content Cell |
+| BERT + BIDAF++ | 59.34 | Content Cell |
+| **SDNet** | 33。13 | Content Cell |
 
 ## Conclusion
 * **FlowQA+Attention Over Flow**: adding attention layers over ﬂow operation layer slightly improves the FlowQA model. We believe that it is because the representations generated in this way focus more on recent dialogs and help resolve coreferences.
