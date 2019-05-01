@@ -47,6 +47,19 @@ Here is the one hot encoding for above example.
 
 We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045). Since the model predicts the coreference, we hypothesize that the latent representation of the model will encode the coreference as well.
 
+# Experiment
+
+First, we set up the Coreference Model according to [instruction](https://github.com/kentonl/e2e-coref). 
+Then we use their pre-trained coreference model to predict the coreference of QuAC data set.
+We extract the latent representation of each token and save them. 
+After that, we convert the result of the coreference model to one hot encoding.
+Finally, we concatenate them with one hot coding.
+
+
+We use [Google Cloud Platform](https://cloud.google.com/) with 4 vCPUs, 26 GB memory and 1 x NVIDIA Tesla K80 to run both FlowQA and Coreference models. 
+It takes around 50 hour to predict the coreference for entire QuAC dataset and takes around 4 hour per epoch to train FlowQA model
+
+
 # Result
 
 Below is the comparison of F1 between the original FlowQA model and our modification. We can see that the improved model perform slightly better.
