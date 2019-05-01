@@ -19,11 +19,47 @@ However, we have noticed that in the "flow" operation, no attention mechanism is
 
 We would describe how we modified the "flow" operation in detail.
 
+## Experiments
+
+We conducted experiments on Google Cloud, using a 2-CPU, 1 Tesla K80 GPU with 11 GB GPU memory and 60 GB disk memory. We use python 3.6.8 and pytorch 1.0.1. The batch size is set to be 2. 
+
+How to run the code is the same as FlowQA. However, using "attention over flow" is set to be default.
+
+From https://github.com/momohuang/FlowQA we borrow their instructions as follows
+
+Step 1:
+perform the following:
+
+> pip install -r requirements.txt
+
+to install all dependent python packages.
+
+Step 2:
+download necessary files using:
+
+> ./download.sh
+
+Step 3:
+preprocess the data files using:
+
+> python preprocess_QuAC.py
+
+Step 4:
+run the training code using:
+
+> python train_QuAC.py
+
+To specify not using "attention over flow", run:
+
+> python train_QuAC.py --flow_attention=0
+
 
 ## Results
 
 The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value. We would like to mention that the model converges much faster, as only 10 epochs is used instead of 20.
 
-## Experiments
+## References
+
+
 
 
