@@ -39,14 +39,22 @@ The output is the answer of each question. The answer must be a span of context 
 Why does FlowQA work? We believe that it is because of its "flow" operation, which uses a LSTM (or GRU) to represent context words in terms of question turns. By using "flow" operation, FlowQA could capture and retain conversational information. Since
 conversations are in fact sequences, it is a natural, yet smart, idea, to encode conversational information in this way.
 
-![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Vanilla%20Flow%20Operation.png)
+
+<p align="center">
+    <img src="https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Vanilla%20Flow%20Operation.png" width="400"/>
+    
+</p>
 
 #### [FlowQA + Attention Over Flow](FlowQA_Attention)
 
 We believe that applying attention here should be considered, because not every historical conversation is important. 
 When new questions are posted, it is highly likely that only several previous questions are involved, instead of all. By adding attention in the "flow" operation, we could align new representations with previous useful ones. We would like to call it "attention-over-flow".
 
-![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Attention%20Over%20Flow.png)
+
+<p align="center">
+    <img src="https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Attention%20Over%20Flow.png" width="400"/>
+    
+</p>
 
 #### [FlowQA + Coreference](FlowQA_Coreference)
 
