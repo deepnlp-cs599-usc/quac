@@ -1,4 +1,4 @@
-# Using enhenced BiDAF++ on QuAC
+# Using enhanced BiDAF++ on QuAC
 
 ## Descriptions
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings.
@@ -75,7 +75,7 @@ We modified the wordpiece indexer and bert token embedder to train the model wit
 [Validation data](https://s3.amazonaws.com/my89public/quac/val.json)
 
 ### Training
-Train a enhenced model with QuAC dataset which includes training and validation dataset
+Train a enhanced model with QuAC dataset which includes training and validation dataset
 ```
 nohup allennlp train <your_path_to_jsonnet_file>  --serialization-dir <your_path_to_log_file> > output.log &
 ```
@@ -84,11 +84,11 @@ As [QuAC](https://arxiv.org/pdf/1808.07036.pdf) mentioned，Questions in the tra
 Best model's configuration is [here](https://github.com/deepnlp-cs599-usc/quac/blob/master/BiDAF/BiDAFF%2B%2B_with_glove%2Bbert.jsonnet).
 ## Results
 ### F1 score
-Enhenced model by BERT
+Enhanced model by BERT
 <p align="center">
     <img src="Figures/enhenced.png" width="200%"/>
 </p>
-Enhenced model by ELMo 
+Enhanced model by ELMo 
 <p align="center">
     <img src="Figures/enhenced_elmo.png" width="200%"/>
 </p>
@@ -97,13 +97,13 @@ Baseline model
     <img src="Figures/baseline.png" width="200%"/>
 </p>
 
-### Performance on baseline and enhenced models
+### Performance on baseline and enhanced models
 
 | | F1 score on training set | F1 score on validation set|
 | --- | --- | --- |
 | Baseline model | 49.40 | 55.59 |
-| Enhenced by ELMo | 49.40 | **58.40** |
-| Enhenced by BERT | **53.05** | **60.04**|
+| Enhanced by ELMo | 49.40 | **58.40** |
+| Enhanced by BERT | **53.05** | **60.04**|
 
 ## Related works
 
