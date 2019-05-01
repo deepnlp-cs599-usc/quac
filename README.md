@@ -3,14 +3,14 @@ Question Answering (QA) has long been a promising yet challenging task, and a la
 
 In this project, we are going to use deep neural networks to address QuAC[1], one of these Conversational QA datasets. We are going to train existing models on QuAC and compare their pros and cons. We will also use models effective on other related datasets and invent new models involving different network architectures or mechanisms. We hope that we could obtain a better, and even state-of-the-art performance.
 
-## QuAC
+## [QuAC](http://quac.ai)
 <p align="center">
     <img src="figure/task.png" width="400"/>
     <br></br>
     Figure 1: Task setup of QuAC.
 </p>
 
-Question Answering in Context(QuAC)[1] is a newly proposed dataset with regards to conversational QA. The task is to answer a question in a conversation given a context and historical questions and answers in the conversation. Compared with the former ones, its questions are often highly context-dependent, elliptical, and even unanswerable. The architecture o typical QA models for QuAC:
+Question Answering in Context(QuAC) is a newly proposed dataset with regards to conversational QA. The task is to answer a question in a conversation given a context and historical questions and answers in the conversation. Compared with the former ones, its questions are often highly context-dependent, elliptical, and even unanswerable. The architecture o typical QA models for QuAC:
 
 <p align="center">
     <img src="figure/quac.png" width="400"/>
