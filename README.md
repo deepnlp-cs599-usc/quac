@@ -34,7 +34,7 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 ![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Vanilla%20Flow%20Operation.png)
 
-#### [FlowQA + Attention](FlowQA_Attention)
+#### [FlowQA + Attention Over Flow](FlowQA_Attention)
 
 However, we have noticed that in the "flow" operation, no attention mechanism is used. We believe that applying attention here should be considered, because not every historical conversation is important. When new questions are posted, it is highly likely that only several previous questions are involved, instead of all. By adding attention in the "flow" operation, we could align new representations with previous useful ones. We would like to call it "attention-over-flow".
 
@@ -56,7 +56,7 @@ A contextualized attention-based deep neural network developed by Microsoft. It 
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings. We intend to append ELMo or BERT embedding to word embeddings and contextualized embeddings to get better performance.
 
 ## Conclusion
-* **FlowQA+Attention**: adding attention layers over ﬂow operation layer slightly improves the FlowQA model. We believe that it is because the representations generated in this way focus more on recent dialogs and help resolve coreferences.
+* **FlowQA+Attention Over Flow**: adding attention layers over ﬂow operation layer slightly improves the FlowQA model. We believe that it is because the representations generated in this way focus more on recent dialogs and help resolve coreferences.
 
 * **FlowQA+Coreferece**: Adding vector representation that encodes the coreference in long context can increase the performance of the model for task involving complex dependencies (context and dialogue)
 
