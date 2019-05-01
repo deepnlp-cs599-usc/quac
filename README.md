@@ -36,7 +36,9 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 #### [FlowQA + Attention Over Flow](FlowQA_Attention)
 
-However, we have noticed that in the "flow" operation, no attention mechanism is used. We believe that applying attention here should be considered, because not every historical conversation is important. When new questions are posted, it is highly likely that only several previous questions are involved, instead of all. By adding attention in the "flow" operation, we could align new representations with previous useful ones. We would like to call it "attention-over-flow".
+[//]: <>(However, we have noticed that in the "flow" operation, no attention mechanism is used. )
+We believe that applying attention here should be considered, because not every historical conversation is important. 
+When new questions are posted, it is highly likely that only several previous questions are involved, instead of all. By adding attention in the "flow" operation, we could align new representations with previous useful ones. We would like to call it "attention-over-flow".
 
 ![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Attention%20Over%20Flow.png)
 
