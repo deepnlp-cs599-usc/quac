@@ -11,7 +11,7 @@ We have noticed that in the "flow" operation, no attention mechanism is used. We
 
 ## Experiments
 
-We conducted experiments on Google Cloud, using a 2-CPU, 1 Tesla K80 GPU with 11 GB GPU memory and 60 GB disk memory. We use python 3.6.8 and pytorch 1.0.1. The batch size is set to be 2. 
+We conducted experiments on Google Cloud, using a 2-CPU, 1 Tesla K80 GPU with 11 GB GPU memory and 60 GB disk memory. We use python 3.6.8 and pytorch 1.0.1. The batch size is set to be 2. The code is based on [momohuang's code on github](https://github.com/momohuang/FlowQA).
 
 How to run the code is the same as FlowQA. However, using "attention over flow" is set to be default.
 
