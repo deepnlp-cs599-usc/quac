@@ -59,7 +59,7 @@ An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for wo
 ## Results
 | Model | F1 | Remark |
 | ------------- | ------------- | ------------- |
-| **FlowQA Baseline** | 64.20| full dataset |
+| **FlowQA Baseline** | 64.24| full dataset |
 | **FlowQA Baseline** | 53.40| 25% dataset |
 | FlowQA + Coreference | 53.98 | 25% dataset |
 | FlowQA + Attention on Flows | 64.35 |  |
