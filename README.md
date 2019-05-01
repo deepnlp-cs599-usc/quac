@@ -60,7 +60,7 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 | Model | F1 | Remark |
 | ------------- | ------------- | ------------- |
 | **FlowQA Baseline** | 64.24| |
-| FlowQA + Coreference | 62.50 | Epoch = 5 |
+| FlowQA + Coreference | 62.50 | Baseline=62.26|
 | FlowQA + Attention on Flows | 64.35 |  |
 | **BiDAF++ Baseline** | 55.59 | |
 | ELMO + BiDAF++ | 58.40 |  |
