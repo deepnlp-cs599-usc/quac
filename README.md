@@ -1,7 +1,7 @@
 # Question Answering In Context
 Question Answering (QA) has long been a promising yet challenging task, and a large number of work has been done in this area. However, simple QA tasks such as extracting answer spans from a given text have been criticized as "shallow pattern recognition", which does not equip machines with the capability of reading. Recently, Conversational Question Answering has been proposed to address this issue. In this task, a program needs to not only answer questions, but also answer them in a conversational style.
 
-In this project, we are going to use deep neural networks to address QuAC[1], one of these Conversational QA datasets. We are going to train existing models on QuAC and compare their pros and cons. We will also use models effective on other related datasets and invent new models involving different network architectures or mechanisms. We hope that we could obtain a better, and even state-of-the-art performance.
+In this project, we are going to use deep neural networks to address [QuAC](https://quac.ai/), one of these Conversational QA datasets. We are going to train existing models on QuAC and compare their pros and cons. We will also use models effective on other related datasets and invent new models involving different network architectures or mechanisms. We hope that we could obtain a better, and even state-of-the-art performance.
 
 ## [QuAC](http://quac.ai)
 <p align="center">
@@ -28,6 +28,7 @@ The output is the answer of each question. The answer must be a span of context 
 
 [FlowQA](https://github.com/momohuang/FlowQA) has been shown to have a considerable good performance on conversational question-answering tasks such as CoQA and QuAC. Firstly, we re-run the FlowQA model and investigate why it has great performance and why it is special. 
 
+
 Why does FlowQA work? We believe that it is because of its "flow" operation, which uses a LSTM (or GRU) to represent context words in terms of question turns. By using "flow" operation, FlowQA could capture and retain conversational information. Since
 conversations are in fact sequences, it is a natural, yet smart, idea, to encode conversational information in this way.
 
@@ -39,8 +40,9 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 #### [FlowQA + Coreference](FlowQA_Coreference)
 
-Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model.
-
+Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model. 
+Below figure shows the improved model where the gray blocks are the existing FlowQA model and the blue blocks are coreference model we added. 
+Our experiment shows that, with coreference model, the F1 is slightly better.
 <p align="center">
     <img src="/figure/flow-coref.png" width="400"/>
 </p>
