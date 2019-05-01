@@ -55,6 +55,10 @@ A contextualized attention-based deep neural network developed by Microsoft. It 
 
 ### [BiDAF++](BiDAF)
 An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings. We intend to append ELMo or BERT embedding to word embeddings and contextualized embeddings to get better performance.
+<p align="center">
+    <img src="BiDAF/Figures/Arch.png" width="400"/>
+</p>
+
 
 ## Results
 | Model | F1 | Remark |
