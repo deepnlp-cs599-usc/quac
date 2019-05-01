@@ -16,5 +16,9 @@ We would describe how we modified the "flow" operation in detail.
 
 # Results
 
-The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value.
+The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value. We would like to mention that the model converges much faster, as only 10 epochs is used instead of 20.
+
+# Experiments
+
+
 
