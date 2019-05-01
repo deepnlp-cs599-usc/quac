@@ -60,7 +60,11 @@ The result shows that our attempt slightly improves FlowQA by 0.1 of F-1 value. 
 
 ## References
 
-Flowqa: Grasping flow in history for conversational machine comprehensionn. By Huang H Y, Choi E, Yih W.
+[Flowqa: Grasping flow in history for conversational machine comprehensionn.](https://arxiv.org/abs/1810.06683) By Huang H Y, Choi E, Yih W.
+
+[Quac: Question answering in context.](https://arxiv.org/abs/1808.07036) By Choi E, He H, Iyyer M, et al. 
+
+
 
 
 
