@@ -8,7 +8,7 @@ Since the format of dataset is different between CoQA and QuAC, we need to conve
 ## Usage
 In preprocess folder there is a script to convert QuAC data to CoQA format.
 
-for detailed usage please refer to [SDNet GitHub page](https://github.com/Microsoft/SDNet)
+For detailed usage please refer to [SDNet GitHub page](https://github.com/Microsoft/SDNet)
 
 ## Result and conclusion
 Training loss and development set F1 score are shown below: 
