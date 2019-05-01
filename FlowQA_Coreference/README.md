@@ -49,4 +49,4 @@ We use the latent representation from the coreference model as an input of FlowQ
 
 # Result
 
-![alt text](figure/coref-F1)
+![](figure/coref-F1.png)
