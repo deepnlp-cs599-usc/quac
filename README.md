@@ -25,6 +25,11 @@ The input of the problem is a context as background and a sequence of text-free 
 
 The output is the answer of each question. The answer must be a span of context unless the question is a “yes/no“ question, or the answer should be “cannot answer“ if the answer cannot be found in given context.
 
+<p align="center">
+    <img src="https://github.com/deepnlp-cs599-usc/quac/blob/master/figure/QA.png" width="400"/>
+    
+</p>
+
 ## Approaches
 ### FlowQA
 
