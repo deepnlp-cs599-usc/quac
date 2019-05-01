@@ -64,8 +64,8 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 | FlowQA + Coreference | 53.98 | 25% dataset |
 | FlowQA + Attention on Flows | 64.35 |  |
 | **BiDAF++ Baseline** | 55.59 | full dataset |
-| ELMO + BiDAF++ | 58.42 |  |
-| BERT + BIDAF++ | 59.34 |  |
+| ELMO + BiDAF++ | 58.40 |  |
+| BERT + BIDAF++ | 60.04 |  |
 | **SDNet** | 33.13 |  |
 
 ## Conclusion
