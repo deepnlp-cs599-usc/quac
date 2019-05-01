@@ -1,6 +1,6 @@
 # FlowQA + Coreference
 
-We used the [coreference model](https://github.com/kentonl/e2e-coref) proposed by Lee et all to improve the [FlowQA](https://github.com/momohuang/FlowQA?fbclid=IwAR33nKQCFRc2AYqf09QIoElVMTVXNFjG0OzB3-H139_WyPJrq-1VaEyYrGk) model. 
+We used the [coreference model](https://github.com/kentonl/e2e-coref) proposed by Lee et all to improve the [FlowQA](https://github.com/momohuang/FlowQA) model. 
 In short, this model clusters spans in text that coreference among other.
 For example, let's consider below conversation;
 
@@ -53,7 +53,12 @@ First, we set up the Coreference Model according to [instruction](https://github
 Then we use their pre-trained coreference model to predict the coreference of QuAC data set.
 We extract the latent representation of each token and save them. 
 After that, we convert the result of the coreference model to one hot encoding.
-Finally, we concatenate them with one hot coding.
+Finally, we concatenate them with one hot encoding to obtain the augmented input vector that will be used to input FlowQA.
+The augmented vector' size is 450 which consists of 400 for X* latent representation and 50 for one hot encoding.
+
+Second, we set up the FlowQA model according to the [instruction](https://github.com/momohuang/FlowQA). 
+We have to modify ```train_QuAC.py```, ```general_utils.py``` and ```detail_model.py``` to support the augmented representation. 
+Then we train the model with this new input representation.
 
 
 We use [Google Cloud Platform](https://cloud.google.com/) with 4 vCPUs, 26 GB memory and 1 x NVIDIA Tesla K80 to run both FlowQA and Coreference models. 
