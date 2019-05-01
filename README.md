@@ -10,13 +10,14 @@ In this project, we are going to use deep neural networks to address QuAC[1], on
     Figure 1: Task setup of QuAC.
 </p>
 
-Question Answering in Context(QuAC)[1] is a newly proposed dataset with regards to conversational QA. The task is to answer a question in a conversation given a context and historical questions and answers in the conversation. Compared with the former ones, its questions are often highly context-dependent, elliptical, and even unanswerable.
+Question Answering in Context(QuAC)[1] is a newly proposed dataset with regards to conversational QA. The task is to answer a question in a conversation given a context and historical questions and answers in the conversation. Compared with the former ones, its questions are often highly context-dependent, elliptical, and even unanswerable. The architecture o typical QA models for QuAC:
 
 <p align="center">
     <img src="figure/quac.png" width="400"/>
     <br></br>
     Figure 2: Baseline QA Model for QuAC.
 </p>
+
 ## Approaches and Results
 ### FlowQA
 
@@ -34,7 +35,7 @@ Question Answering in Context(QuAC)[1] is a newly proposed dataset with regards 
 
 * **FlowQA+Coreferece**: Adding vector representation that encodes the coreference in long context can increase the performance of the model for task involving complex dependencies (context and dialogue)
 
-* **Enhancing BiDAF++**: Replacing Glove embedding with ELMO and BERT embedding for input embedding layers. Because elmo extracts context features from language model and BERT uses pre-trained model which could perform better than Glove on QuAC dataset, these two embeddings could enhance the model performance.
+* **Enhancing BiDAF++**: Appending GLoVe embedding with ELMo or BERT embedding for input embedding layers and phrase layers. Because ELMo extracts context features from language model and BERT uses pre-trained model which could perform better than GLoVe on QuAC dataset, these two embeddings could enhance the model performance.
 
 * **SDNet**: SDnet is not originally applied on QuAC dataset. So we adjusted the format of dataset so it can be ﬁtted on SDNet. However the result is not as good as we expected. We can try to ﬁgure out issues and improve this model in future.
 
