@@ -24,6 +24,23 @@ In order to feed this coreference information to the FlowQA model, we can
 * Feed the result from the coreference model to the FlowQA model
 * Feed the internal representation of each tokens in coreference model to the FlowQA model
 
-## Feed the result from the coreference model to the FlowQA model
+## Feed the result from the coreference model 
 
-## Feed the internal representation of each tokens in coreference model to the FlowQA model
+We use one hot encoding to represent the results from coreference model. 
+Each token will be coresponding to a vector of which the length is the number of clusters.
+If a token belong to an ith cluster, the element ith in one hot vector will be 1.
+Here is the one hot encoding for above example.
+
+"young" [1, 1]
+"girl" [1, 1]
+"and" [0 ,1]
+"her" [1, 1]
+"dog" [1, 1]
+"What" [0, 0]
+"were" [0, 0]
+"they" [0, 1]
+"doing" [0, 0]
+
+## Feed the internal representation 
+
+We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045)
