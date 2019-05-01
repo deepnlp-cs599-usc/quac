@@ -1,6 +1,6 @@
 # FlowQA + Coreference
 
-We used the [coreference model](https://github.com/kentonl/e2e-coref) proposed by Lee et all. 
+We used the [coreference model](https://github.com/kentonl/e2e-coref) proposed by Lee et all to improve the [FlowQA](https://github.com/momohuang/FlowQA?fbclid=IwAR33nKQCFRc2AYqf09QIoElVMTVXNFjG0OzB3-H139_WyPJrq-1VaEyYrGk) model. 
 In short, this model clusters spans in text that coreference among other.
 For example, let's consider below conversation;
 
@@ -48,5 +48,7 @@ Here is the one hot encoding for above example.
 We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045). Since the model predicts the coreference, we hypothesize that the latent representation of the model will encode the coreference as well.
 
 # Result
+
+Below is the comparison of F1 between the original FlowQA model and our modification. We can see that the improved model perform slightly better.
 
 ![ ](/figure/coref-F1.png)
