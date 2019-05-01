@@ -18,6 +18,11 @@ In this project, we are going to use deep neural networks to address QuAC[1], on
     Figure 2: Baseline QA Model for QuAC.
 </p>
 
+## Problem Formulation
+The input of the problem is a context as background and a sequence of text-free questions, each question has two binary properties “yes/no” and “followup”. The first property indicates whether the question can be answered by affirmation “yes” or “no”. The second property indicates whether the question is a follow-up of previous questions. 
+
+The output is the answer of each question. The answer must be a span of context unless the question is a “yes/no“ question, or the answer should be “cannot answer“ if the answer cannot be found in given context.
+
 ## Approaches and Results
 ### FlowQA
 
@@ -34,9 +39,7 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 #### [FlowQA + Coreference](FlowQA_Coreference)
 
-Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model. 
-Below figure shows the improved model where the gray blocks are the existing FlowQA model and the blue blocks are coreference model we added. 
-Our experiment shows that, with coreference model, the F1 is slightly better.
+Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model.
 
 <p align="center">
     <img src="/figure/flow-coref.png" width="400"/>
