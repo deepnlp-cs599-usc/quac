@@ -31,6 +31,9 @@ The output is the answer of each question. The answer must be a span of context 
 </p>
 
 ## Approaches
+
+We try to enhance two baseline models: FlowQA and BiDAF++. We also try to apply an existing model, SDNet, which works on another QA dataset.
+
 ### FlowQA
 
 [FlowQA](https://github.com/momohuang/FlowQA) has been shown to have a considerable good performance on conversational question-answering tasks such as CoQA and QuAC. Firstly, we re-run the FlowQA model and investigate why it has great performance and why it is special. 
