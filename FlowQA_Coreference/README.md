@@ -48,3 +48,5 @@ Here is the one hot encoding for above example.
 We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045). Since the model predicts the coreference, we hypothesize that the latent representation of the model will encode the coreference as well.
 
 # Result
+
+![alt text](figure/coref-F1)
