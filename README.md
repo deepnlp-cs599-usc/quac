@@ -23,8 +23,6 @@ The input of the problem is a context as background and a sequence of text-free 
 
 The output is the answer of each question. The answer must be a span of context unless the question is a “yes/no“ question, or the answer should be “cannot answer“ if the answer cannot be found in given context.
 
-![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/figure/QA.png)
-
 ## Approaches
 ### FlowQA
 
@@ -84,14 +82,10 @@ An original [BiDAF++](https://arxiv.org/abs/1710.10723) model uses Char-CNN for 
 
 ## References
 
-* [FlowQA: Grasping Flow in History for Conversational Machine Comprehension](https://arxiv.org/abs/1810.06683) by Huang H Y, Choi E, Yih W.
-
-* [Quac: Question answering in context.](https://arxiv.org/abs/1808.07036) by Choi E, He H, Iyyer M, et al. 
-
 
 * [Bidirectional attention ﬂow for machine comprehension](https://arxiv.org/abs/1611.01603) by Minjoon Seo et. al.
 * [Simple and effective multi-paragraph reading comprehension](https://arxiv.org/abs/1710.10723) by Christopher Clark et. al.
 * [Deep contextualized word representations](https://arxiv.org/abs/1802.05365) by Matthew E. Peters et. al.
 * [Bert: Pre-training of deep bidirectional transformers for language understanding](https://arxiv.org/abs/1810.04805) by  Jacob Devlin et. al.
-* [End-to-end Neural Coreference Resolution](https://arxiv.org/abs/1707.07045) by Lee et. al.
+* [SDNet: Contextualized Attention-based Deep Network for Conversational Question Answering](https://arxiv.org/abs/1812.03593) by Chenguang Zhu et. al.
 
