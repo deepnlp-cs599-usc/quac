@@ -99,7 +99,7 @@ Baseline model
 
 | | F1 score on training set | F1 score on validation set|
 | --- | --- | --- |
-| Bseline model | 49.40 | 55.59 |
+| Baseline model | 49.40 | 55.59 |
 | Enhenced by ELMo | 49.40 | **58.40** |
 | Enhenced by BERT | **53.05** | **60.04**|
 
