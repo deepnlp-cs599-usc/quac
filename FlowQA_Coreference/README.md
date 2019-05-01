@@ -22,7 +22,9 @@ Therefore, the model will cluster the following spans;
 In order to feed this coreference information to the FlowQA model, we can
 
 * Feed the result from the coreference model to the FlowQA model
-* Feed the internal representation of each tokens in coreference model to the FlowQA model
+* Feed the internal representation of each tokens in coreference model to the FlowQA model.
+
+We concatenate these two new representation with the existing input of FlowQA, which consists of word embeddings, part of speech and named entity.
 
 ## Feed the result from the coreference model 
 
@@ -43,4 +45,6 @@ Here is the one hot encoding for above example.
 
 ## Feed the internal representation 
 
-We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045)
+We use the latent representation from the coreference model as an input of FlowQA model. To be precise, we use X* from the figure 3 of [this paper](https://arxiv.org/abs/1707.07045). Since the model predicts the coreference, we hypothesize that the latent representation of the model will encode the coreference as well.
+
+# Result
