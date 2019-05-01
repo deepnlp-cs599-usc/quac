@@ -3,6 +3,8 @@
 ## Descriptions
 An original BiDAF++ model uses Char-CNN for character embedding and GLoVe for word embedding. It is also equipped with contextualized embeddings and self attention. In this model, marker embeddings corresponding to previous answer words are used, while question turn numbers are encoded into question embeddings.
 
+We've used [AllenNLP](https://github.com/allenai/allennlp) library to modify the BiDAF++ and used enhenced models to train on [QuAC](https://quac.ai/) dataset. 
+
 ## Architecture of enhenced BiDAF++
 <p align="center">
     <img src="Figures/Arch.png" width="90%"/>
@@ -51,7 +53,7 @@ We modified the wordpiece indexer and bert token embedder to train the model wit
 - PyTorch 1.0 + fast.ai 1.0(CUDA 10.0)
 - Install NVIDIA GPU driver automatically on first startup 
 
-### Setting up an [allennlp](https://github.com/allenai/allennlp) virtual environment
+### Setting up an AllenNLP virtual environment
 
 1.  Create a Conda environment with Python 3.6
 
