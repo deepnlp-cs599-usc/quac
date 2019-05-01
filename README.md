@@ -34,7 +34,9 @@ conversations are in fact sequences, it is a natural, yet smart, idea, to encode
 
 #### [FlowQA + Coreference](FlowQA_Coreference)
 
-Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model.
+Since the QuAC data set may contain many coreference in context and also in conversations, our intuition is that we could exploit the coreference resolution model to improve FlowQA model. 
+Below figure shows the improved model where the gray blocks are the existing FlowQA model and the blue blocks are coreference model we added. 
+Our experiment shows that, with coreference model, the F1 is slightly better.
 
 <p align="center">
     <img src="/figure/flow-coref.png" width="400"/>
