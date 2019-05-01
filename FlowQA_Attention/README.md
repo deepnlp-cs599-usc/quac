@@ -1,13 +1,6 @@
 # FlowQA + Attention Over Flow
 
-## What do we try to improve
 
-FlowQA has been shown to have a considerable good performance on conversational question-answering tasks such as CoQA and QuAC. Firstly, we re-run the FlowQA model and investigate why it has great performance and why it is special. 
-
-Why does FlowQA work? We believe that it is because of its "flow" operation, which uses a LSTM (or GRU) to represent context words in terms of question turns. By using "flow" operation, FlowQA could capture and retain conversational information. Since
-conversations are in fact sequences, it is a natural, yet smart, idea, to encode conversational information in this way.
-
-![image](https://github.com/deepnlp-cs599-usc/quac/blob/master/FlowQA_Attention/figure/Vanilla%20Flow%20Operation.png)
 
 ## How we improve FlowQA -- Adding Self-attention
 
